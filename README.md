@@ -30,7 +30,7 @@ For this exercise, we will build a small Express app split up into 2 Routers tha
 ## The First Router
 - Create a `routes` directory and add `ice_cream.js` and `dino.js`
 - Inside `dinos.js` create a `dinoRouter` and export it
-- Add an `index` route (get all) and a `show` route (get one by id) for dinos to the `dinoRouter`; make the appropriate db calls inside each route handler
+- Add an `index` route (get all) and a `show` route (get one by id) for dinos to the `dinoRouter`; make the appropriate db calls inside each route handler (i.e., findAll, findOne)
 - Back in `server.js` import the `dinoRouter` and mount it to app under the `/dinosaurs` prefix
 
 ## The Second Router
