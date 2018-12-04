@@ -7,7 +7,9 @@ For this exercise, we will build a small Express app split up into 2 Routers tha
 - Fork and clone this repo
 - run `npm init -y`
 - Using npm, install `express`, `morgan`, `nodemon`, `sequelize`, and `pg`
+    - `npm install --save express morgan nodemon sequelize pg pg-hstore`
 - Update `package.json` with `scripts` for `start`, `dev`, `resetDb`, `seed`, and `debug`
+    - here is a [link](https://git.generalassemb.ly/wdi-nyc-octonion/express-react-crud-school/blob/master/package.json) as how to write the scripts in your `package.json` file
 - create a database called `jurassic_ice_cream_db`
 
 ## The Models
