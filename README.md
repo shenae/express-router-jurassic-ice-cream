@@ -6,6 +6,6 @@ For this homework, we will build a small Express app in our server.js file. Once
 
 ## Set Up
 - Fork and clone this repo
-- your models and seed have been created for you so run `npm db:init` and `npm db:model` and `npm db:seed to set up your database 
+- your models and seed have been created for you so run `npm db:init` and `npm db:model` and `npm db:seed` to set up your database 
 - follow the instructions inside of server.js
 
