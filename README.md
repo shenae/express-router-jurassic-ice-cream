@@ -1,7 +1,6 @@
 # Router Practice with Jurassic Ice Cream
-_Introduction_
 
-For this exercise, we will build a small Express app split up into 2 Routers that are mounted to `app`. The two Routers will be for `dinosaurs` and `ice_cream_flavors`.  Try to work on each piece of the app in isolation.  Once each route is working try to test it from the browser or with `insomnia`.
+For this homework, we will build a small Express app split up into 2 Routers that are mounted to `app`. The two Routers will be for `dinosaurs` and `ice_cream_flavors`.  Try to work on each piece of the app in isolation.  Once each route is working try to test it from the browser or with Postman.
 
 ![](https://cdn.dribbble.com/users/28275/screenshots/3804066/icecream.gif)
 

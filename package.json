@@ -1,0 +1,27 @@
+{
+  "name": "express-router-hw",
+  "version": "1.0.0",
+  "description": "For this homework, we will build a small Express app split up into 2 Routers that are mounted to `app`. The two Routers will be for `dinosaurs` and `ice_cream_flavors`.  Try to work on each piece of the app in isolation.  Once each route is working try to test it from the browser or with Postman.",
+  "main": "index.js",
+  "scripts": {
+    "db:init": "dropdb --if-exists jurassic_ice_cream_db && createdb jurassic_ice_cream_db",
+    "db:model": "node models.js",
+    "db:reset": "node reset.js",
+    "db:seed": "node seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:WDI-Epiphany/express-router-hw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0"
+  }
+}
