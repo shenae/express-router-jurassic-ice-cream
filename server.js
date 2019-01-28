@@ -6,35 +6,28 @@ app.get('/', (req, res) => {
     res.send('index!')
 })
 
-app.get('/dinos/all', async (req, res) => {
-    const dinos = await Dinosaur.findAll({})
-    res.json(dinos)
-})
+// Create a route that displays all dinos
 
-app.get('/flavors/all', async (req, res) => {
-    const flavors = await Flavor.findAll({})
-    res.json(flavors)
-})
 
-app.get('/dinos/id/:id', async (req, res) => {
-    const dino = await Dinosaur.findOne({ where: { id: req.params.id } })
-    res.json(dino)
-})
 
-app.get('/dinos/name/:name', async (req, res) => {
-    const dino = await Dinosaur.findOne({ where: { name: req.params.name } })
-    res.json(dino)
-})
+// Create a route that displays all flavors
 
-app.get('/flavors/show/:id', async (req, res) => {
-    const flavor = await Flavor.findOne({ where: { id: req.params.id } })
-    res.json(flavor)
-})
 
-app.get('/flavors/name/:name', async (req, res) => {
-    const flavor = await Flavor.findOne({ where: { name: req.params.name } })
-    res.json(flavor)
-})
+
+// Create a route that displays a single dino by id Ex: /dinos/id/1 should display json of the dino with an id of 1
+
+
+
+// Create a route that displays a single dino by name Ex: /dinos/name/barney should display json of barney the dinosaur
+
+
+
+// Create a route that displays a single dino by id Ex: /flavors/id/1 should display json of the flavor with an id of 1
+
+
+
+// Create a route that displays a single dino by name Ex: /flavors/name/lemon should display json of the lemon flavor
+
 
 app.listen(3000, () => {
     console.log(`running on port 3000!`)
