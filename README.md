@@ -6,10 +6,6 @@ For this homework, we will build a small Express app in our server.js file. Once
 
 ## Set Up
 - Fork and clone this repo
-- run `npm init -y`
-- Using npm, install `express`, `nodemon`, and `sequelize`
-    - `npm install --save express nodemon sequelize`
-- create a database called `jurassic_ice_cream_db`
-- your models and seed have been created for you so run `npm run resetDb` and `npm run seed` to set up your database 
+- your models and seed have been created for you so run `npm db:init` and `npm db:model` and `npm db:seed to set up your database 
 - follow the instructions inside of server.js
 
