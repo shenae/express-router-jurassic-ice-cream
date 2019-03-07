@@ -22,11 +22,11 @@ app.get('/', (req, res) => {
 
 
 
-// Create a route that displays a single dino by id Ex: /flavors/id/1 should display json of the flavor with an id of 1
+// Create a route that displays a single flavor by id Ex: /flavors/id/1 should display json of the flavor with an id of 1
 
 
 
-// Create a route that displays a single dino by name Ex: /flavors/name/lemon should display json of the lemon flavor
+// Create a route that displays a single flavor by name Ex: /flavors/name/lemon should display json of the lemon flavor
 
 
 app.listen(3000, () => {
