@@ -41,11 +41,11 @@ app.get('/dinos/:id', async (request, response) => {
   });
 
 // Create a route that displays a single dino by name Ex: /dinos/name/barney should display json of barney the dinosaur
-app.get('/dinos/name/:name', async (request, response) => {
+app.get('/dinos/name/barney', async (request, response) => {
     try {
-      const dinosByName = await Dinosaur.findAll({
-        where: {
-                name: ''}
+      const dinosByName = await Dinosaur.findAll
+      ({where: {
+                name: 'barney'}
         });
 
       response.json(dinosByName);
@@ -67,11 +67,11 @@ app.get('/flavors/id/:id', async (request, response) => {
         }
   });
 
-
 // Create a route that displays a single flavor by name Ex: /flavors/name/lemon should display json of the lemon flavor
 app.get('/flavors/name/lemon', async (request, response) => {
     try {
-      const flavorsByName = await Flavor.findAll({
+      const flavorsByName = await Flavor.findAll
+      ({
         where: {
                 name: 'lemon'}
         });
@@ -82,7 +82,6 @@ app.get('/flavors/name/lemon', async (request, response) => {
     } finally {
         }
   });
-
 
 app.listen(3000, () => {
     console.log(`running on port 3000!`)
