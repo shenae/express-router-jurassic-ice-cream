@@ -41,11 +41,11 @@ app.get('/dinos/:id', async (request, response) => {
   });
 
 // Create a route that displays a single dino by name Ex: /dinos/name/barney should display json of barney the dinosaur
-app.get('/dinos/name/barney', async (request, response) => {
+app.get('/dinos/:name', async (request, response) => {
     try {
       const dinosByName = await Dinosaur.findAll
       ({where: {
-                name: 'barney'}
+                name: {name}}
         });
 
       response.json(dinosByName);
@@ -68,14 +68,10 @@ app.get('/flavors/id/:id', async (request, response) => {
   });
 
 // Create a route that displays a single flavor by name Ex: /flavors/name/lemon should display json of the lemon flavor
-app.get('/flavors/name/lemon', async (request, response) => {
+app.get('/flavors/?name', async (request, response) => {
     try {
-      const flavorsByName = await Flavor.findAll
-      ({
-        where: {
-                name: 'lemon'}
-        });
-
+      const flavorsByName = await Flavor.findByPk(request.params.name);
+    
       response.json(flavorsByName);
     } catch(error) {
       console.log(`Something bad is happening: ${error}`);

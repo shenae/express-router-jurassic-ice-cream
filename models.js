@@ -13,14 +13,14 @@ const db = new Sequelize({
 const Dinosaur = db.define('dinosaur', {
   name: Sequelize.STRING,
   height: Sequelize.INTEGER,
-  period: Sequelize.STRING,
+  period: Sequelize.STRING
 })
 
 // Define Flavor Model
 const Flavor = db.define('flavor', {
   name: Sequelize.STRING,
   color: Sequelize.STRING,
-  on_sale: Sequelize.BOOLEAN,
+  on_sale: Sequelize.BOOLEAN
 })
 
 db.sync()
